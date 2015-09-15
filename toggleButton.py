@@ -19,7 +19,7 @@ class Example(QtGui.QWidget):
         redb.setCheckable(True)
         redb.move(10, 10)
 
-        redb.clicked[bool].connect(self.setColor)
+        redb.clicked[bool].connect(self.setColor)   #connect the button boolean value to setColor method
 
         greenb = QtGui.QPushButton('Green', self)
         greenb.setCheckable(True)
